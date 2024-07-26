@@ -13,9 +13,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "star.fill")
                 .imageScale(.large)
-                .foregroundStyle(.tint)
+                .foregroundStyle(.yellow)
             Text("Hello, world!")
         }
         .padding()
@@ -39,9 +39,15 @@ struct ContentView: View {
             
             // can loop through api w/ page numbers to get more movies - would use variable in api string for page number
             
-            let (data, _) = try await URLSession.shared.data(from: url)
+            let (data, response) = try await URLSession.shared.data(from: url)
             let moviesResponse = try JSONDecoder().decode(MoviesResponse.self, from: data)
+            
+            // print response status code - for testing
 
+            if let httpResponse = response as? HTTPURLResponse {
+                print("Status Code: \(httpResponse.statusCode)\n")
+            }
+            
             // get response data
             
             self.movies = moviesResponse.results
@@ -59,7 +65,7 @@ struct ContentView: View {
     
     private func printMovies() {
         
-        print("total movies: \(movies.count)\n")
+        print("Total movies: \(movies.count)\n")
         
         for movie in movies {
             print("Id: \(movie.id)")
