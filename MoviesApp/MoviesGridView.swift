@@ -11,14 +11,21 @@ struct MoviesGridView: View {
     
     @State private var movies: [Movie] = [] // store movies retrieved from API
     
+    let columns = [GridItem(.flexible(), spacing: 0), GridItem(.flexible(), spacing: 0)]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "star.fill")
-                .imageScale(.large)
-                .foregroundStyle(.yellow)
-            Text("Hello, world!")
+        ZStack {
+            Color(.systemGray5)
+                .ignoresSafeArea()
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 0) {
+                    ForEach(0..<movies.count, id: \.self) { index in
+                        MovieCard(movie: movies[index])
+                            .padding(40)
+                    }
+                }
+            }
         }
-        .padding()
         .onAppear(perform: {
             Task {
                 await fetchMovies()
