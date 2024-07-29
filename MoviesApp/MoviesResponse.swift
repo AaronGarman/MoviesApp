@@ -32,3 +32,5 @@ struct Movie: Decodable {
         case backdropPath = "backdrop_path"
     }
 }
+
+// maybe do data as optionals? unwrap in other views. flatmap for images? card n detail views - do as funcs any?

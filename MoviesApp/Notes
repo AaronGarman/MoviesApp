@@ -1,16 +1,17 @@
 HIGH
-- movie card - add shadow effect, do like 7.5/10 w/ star icon next to it. title below all
 - scroll view + grid for movie cards, 2-3 per row
 - push navigation for detail view
 - detail view - use apple guide example to cover poster n backdrop
+
 - tab bar to switch between movies and favorites
 - firebase authentication
 - firebase database to add and delete movies, no update
+
 - fav button do like lab 7 for add and delete movies from db - button in detail screen
 - favorite list setup just like reg - maybe same vc but pass in array? or copy paste
 
 MEDIUM
-- top nav bar for now playing + upcoming movies - do as overlay?
+- top nav bar for now playing + upcoming movies - do as overlay? anchor at top
 - 2nd tab just like now playing but with upcoming endpoint
 - multiple pages pull from api?
 
@@ -20,6 +21,6 @@ LOW
 GENERAL
 - print movie response?
 - change name of contentview or just new file
-- comments in n out
+- comments in n out - any for end elements?
 - check 3 labs for examples
 - no push + delete user file binary, notes here, and ds store? other swift ui file too like directory one?
