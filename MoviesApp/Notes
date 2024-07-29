@@ -1,8 +1,6 @@
 HIGH
-- push navigation for detail view
 - detail view - use apple guide example to cover poster n backdrop
 
-- tab bar to switch between movies and favorites
 - firebase authentication
 - firebase database to add and delete movies, no update
 
