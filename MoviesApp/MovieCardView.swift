@@ -1,5 +1,5 @@
 //
-//  MovieCard.swift
+//  MovieCardView.swift
 //  MoviesApp
 //
 //  Created by Aaron Garman on 7/26/24.

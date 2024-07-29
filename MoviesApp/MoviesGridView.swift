@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MoviesGridView.swift
 //  MoviesApp
 //
 //  Created by Aaron Garman on 7/24/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MoviesGridView: View {
     
     @State private var movies: [Movie] = [] // store movies retrieved from API
     
@@ -80,5 +80,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MoviesGridView()
 }
