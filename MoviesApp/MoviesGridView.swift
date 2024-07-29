@@ -14,15 +14,23 @@ struct MoviesGridView: View {
     let columns = [GridItem(.flexible(), spacing: 0), GridItem(.flexible(), spacing: 0)]
     
     var body: some View {
-        ZStack {
-            Color(.systemGray5)
-                .ignoresSafeArea()
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 0) {
-                    ForEach(0..<movies.count, id: \.self) { index in
-                        MovieCard(movie: movies[index])
-                            .padding(40)
+        NavigationStack {
+            ZStack {
+                Color(.systemGray5)
+                    .ignoresSafeArea()
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 0) {
+                        ForEach(movies) { movie in
+                            NavigationLink(value: movie) {
+                                MovieCard(movie: movie)
+                                    .padding(40)
+                            }
+                        }
                     }
+                }
+                .navigationTitle("Movies")
+                .navigationDestination(for: Movie.self) { movie in
+                    MovieDetailView(movie: movie)
                 }
             }
         }
@@ -89,3 +97,5 @@ struct MoviesGridView: View {
 #Preview {
     MoviesGridView()
 }
+
+// maybe less space in between cards?

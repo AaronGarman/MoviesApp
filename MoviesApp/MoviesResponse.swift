@@ -11,7 +11,7 @@ struct MoviesResponse: Decodable {
     let results: [Movie]    // movie API endpoint returns array of movie objects
 }
 
-struct Movie: Decodable {
+struct Movie: Decodable, Identifiable, Hashable {
     let id: Int
     let title: String
     let releaseDate: String
@@ -34,3 +34,4 @@ struct Movie: Decodable {
 }
 
 // maybe do data as optionals? unwrap in other views. flatmap for images? card n detail views - do as funcs any?
+// hashable protocol no require func like example?

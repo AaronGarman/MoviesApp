@@ -41,7 +41,7 @@ struct MovieCard: View {
                             Spacer()
                                 .frame(width: 15)
                             Text(String(format: "%.1f", movie.voteAverage) + "/10")
-                                .foregroundStyle(.primary)
+                                .foregroundStyle(.black)
                             Image(systemName: "star.fill")
                                 .imageScale(.medium)
                                 .foregroundColor(.yellow)
@@ -51,6 +51,7 @@ struct MovieCard: View {
                     }
                 }
             Text(movie.title)
+                .foregroundStyle(.black)
                 .multilineTextAlignment(.center)
                 //.frame(width: 150, height: 50)
                 .frame(width: 150)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F3445342C584AE00093ED22 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3445332C584AE00093ED22 /* MovieDetailView.swift */; };
 		2FBB46EB2C51B08900AC3924 /* MoviesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB46EA2C51B08900AC3924 /* MoviesAppApp.swift */; };
 		2FBB46ED2C51B08900AC3924 /* MoviesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB46EC2C51B08900AC3924 /* MoviesGridView.swift */; };
 		2FBB46EF2C51B08A00AC3924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB46EE2C51B08A00AC3924 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F3445332C584AE00093ED22 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		2FBB46E72C51B08900AC3924 /* MoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBB46EA2C51B08900AC3924 /* MoviesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppApp.swift; sourceTree = "<group>"; };
 		2FBB46EC2C51B08900AC3924 /* MoviesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesGridView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				2FBB46EA2C51B08900AC3924 /* MoviesAppApp.swift */,
 				2FBB46EC2C51B08900AC3924 /* MoviesGridView.swift */,
 				2FBB46FE2C53633A00AC3924 /* MovieCardView.swift */,
+				2F3445332C584AE00093ED22 /* MovieDetailView.swift */,
 				2FBB46FA2C51DFBE00AC3924 /* MoviesResponse.swift */,
 				2FBB46EE2C51B08A00AC3924 /* Assets.xcassets */,
 				2FBB46F02C51B08A00AC3924 /* Preview Content */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3445342C584AE00093ED22 /* MovieDetailView.swift in Sources */,
 				2FBB46FF2C53633A00AC3924 /* MovieCardView.swift in Sources */,
 				2FBB46ED2C51B08900AC3924 /* MoviesGridView.swift in Sources */,
 				2FBB46EB2C51B08900AC3924 /* MoviesAppApp.swift in Sources */,
