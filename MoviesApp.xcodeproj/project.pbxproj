@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		2F3445342C584AE00093ED22 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3445332C584AE00093ED22 /* MovieDetailView.swift */; };
 		2F3445362C5854C00093ED22 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3445352C5854BF0093ED22 /* TabsView.swift */; };
-		2F3445382C59828C0093ED22 /* GoogleService-Info-3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F3445372C59828C0093ED22 /* GoogleService-Info-3.plist */; };
+		2F3445382C59828C0093ED22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F3445372C59828C0093ED22 /* GoogleService-Info.plist */; };
 		2F3445462C5984100093ED22 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2F3445452C5984100093ED22 /* FirebaseAuth */; };
 		2F3445482C5984300093ED22 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2F3445472C5984300093ED22 /* FirebaseFirestore */; };
+		2F34454A2C598EE40093ED22 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3445492C598EE40093ED22 /* LoginView.swift */; };
 		2FBB46EB2C51B08900AC3924 /* MoviesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB46EA2C51B08900AC3924 /* MoviesAppApp.swift */; };
 		2FBB46ED2C51B08900AC3924 /* MoviesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB46EC2C51B08900AC3924 /* MoviesGridView.swift */; };
 		2FBB46EF2C51B08A00AC3924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB46EE2C51B08A00AC3924 /* Assets.xcassets */; };
@@ -24,7 +25,8 @@
 /* Begin PBXFileReference section */
 		2F3445332C584AE00093ED22 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		2F3445352C5854BF0093ED22 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
-		2F3445372C59828C0093ED22 /* GoogleService-Info-3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-3.plist"; sourceTree = "<group>"; };
+		2F3445372C59828C0093ED22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2F3445492C598EE40093ED22 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2FBB46E72C51B08900AC3924 /* MoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBB46EA2C51B08900AC3924 /* MoviesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAppApp.swift; sourceTree = "<group>"; };
 		2FBB46EC2C51B08900AC3924 /* MoviesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesGridView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2FBB46EA2C51B08900AC3924 /* MoviesAppApp.swift */,
+				2F3445492C598EE40093ED22 /* LoginView.swift */,
 				2F3445352C5854BF0093ED22 /* TabsView.swift */,
 				2FBB46EC2C51B08900AC3924 /* MoviesGridView.swift */,
 				2FBB46FE2C53633A00AC3924 /* MovieCardView.swift */,
@@ -83,7 +86,7 @@
 				2FBB46FA2C51DFBE00AC3924 /* MoviesResponse.swift */,
 				2FBB46EE2C51B08A00AC3924 /* Assets.xcassets */,
 				2FBB46F02C51B08A00AC3924 /* Preview Content */,
-				2F3445372C59828C0093ED22 /* GoogleService-Info-3.plist */,
+				2F3445372C59828C0093ED22 /* GoogleService-Info.plist */,
 				2FBB46FC2C53081E00AC3924 /* Notes */,
 			);
 			path = MoviesApp;
@@ -165,7 +168,7 @@
 				2FBB46FD2C53081E00AC3924 /* Notes in Resources */,
 				2FBB46F22C51B08A00AC3924 /* Preview Assets.xcassets in Resources */,
 				2FBB46EF2C51B08A00AC3924 /* Assets.xcassets in Resources */,
-				2F3445382C59828C0093ED22 /* GoogleService-Info-3.plist in Resources */,
+				2F3445382C59828C0093ED22 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3445362C5854C00093ED22 /* TabsView.swift in Sources */,
+				2F34454A2C598EE40093ED22 /* LoginView.swift in Sources */,
 				2F3445342C584AE00093ED22 /* MovieDetailView.swift in Sources */,
 				2FBB46FF2C53633A00AC3924 /* MovieCardView.swift in Sources */,
 				2FBB46ED2C51B08900AC3924 /* MoviesGridView.swift in Sources */,

@@ -17,7 +17,7 @@ struct MoviesAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabsView()
+            LoginView()
         }
     }
 }
