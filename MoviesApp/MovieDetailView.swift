@@ -25,3 +25,5 @@ struct MovieDetailView: View {
                            posterPath: "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
                            backdropPath: "/xg27NrXi7VXCGUr7MG75UqLl6Vg.jpg"))
 }
+
+// do background as gray to keep theme w/ tab bar?
